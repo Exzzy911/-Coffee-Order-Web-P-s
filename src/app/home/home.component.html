@@ -1,0 +1,32 @@
+<app-search></app-search>
+<app-tags></app-tags>
+
+<ul>
+  <li *ngFor="let coffee of coffees">
+    <a>
+      <img src="{{ coffee.imageUrl }}" alt="" />
+      <div class="content">
+        <div class="name">
+          {{ coffee.name }}
+        </div>
+        <span class="favourite" ng-class="{ not: !coffee.favourite }">
+          ❤️
+        </span>
+        <div class="product-item-footer">
+          <div class="origin">
+            <span *ngFor="let origin of coffee.origin">
+              {{ origin }}
+            </span>
+          </div>
+          <div class="cook-time">
+            <span>🕒</span>
+            {{ coffee.cookTime }}
+          </div>
+        </div>
+        <div class="price">
+          <span>{{ coffee.price | currency }} </span>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
