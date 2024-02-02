@@ -25,6 +25,11 @@
   </div>
   <button>Add to Cart</button>
 </div> -->
+<app-not-found
+  [visible]="!coffee"
+  notFoundMessage="Product Not Found!"
+  resetLinkText="Back To Homepage"
+></app-not-found>
 
 <div *ngIf="coffee" class="container">
   <img [src]="coffee.imageUrl" [alt]="coffee.name" />

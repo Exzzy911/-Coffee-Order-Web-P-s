@@ -1,5 +1,8 @@
 <app-search></app-search>
 <app-tags></app-tags>
+<app-not-found [visible]="!coffees || coffees.length <= 0" resetLinkText="Reset"
+  >Search</app-not-found
+>
 
 <ul>
   <li *ngFor="let coffee of coffees">

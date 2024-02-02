@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { TagsComponent } from './tags/tags.component';
 import { coffeePageComponent } from './coffee-page/coffee-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CartPageComponent } from './cart-page/cart-page.component';
     SearchComponent,
     TagsComponent,
     coffeePageComponent,
-    CartPageComponent
+    CartPageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

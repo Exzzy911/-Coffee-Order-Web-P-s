@@ -51,7 +51,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: false,
         stars: 5.5,
-        imageUrl: '/assets/images/food-1.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -73,7 +73,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: false,
         stars: 4.0,
-        imageUrl: '/assets/images/food-3.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -84,7 +84,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.8,
-        imageUrl: '/assets/images/food-4.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '8-12'
       },
@@ -95,7 +95,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: false,
         stars: 3.5,
-        imageUrl: '/assets/images/food-5.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '5-10'
       },
@@ -106,7 +106,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.2,
-        imageUrl: '/assets/images/food-6.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -117,7 +117,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.2,
-        imageUrl: '/assets/images/food-6.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -128,7 +128,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.2,
-        imageUrl: '/assets/images/food-6.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -139,7 +139,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.2,
-        imageUrl: '/assets/images/food-6.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -150,7 +150,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.2,
-        imageUrl: '/assets/images/food-6.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -161,7 +161,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.2,
-        imageUrl: '/assets/images/food-6.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -172,7 +172,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.2,
-        imageUrl: '/assets/images/food-6.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -183,7 +183,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.2,
-        imageUrl: '/assets/images/food-6.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },
@@ -216,7 +216,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: true,
         stars: 4.2,
-        imageUrl: '/assets/images/food-6.jpg',
+        imageUrl: '/assets/images/food-7.jpg',
         origins: ['Italy'],
         cookTime: '10-15'
       },

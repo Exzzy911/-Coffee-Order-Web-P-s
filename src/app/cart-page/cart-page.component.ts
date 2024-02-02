@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Cart } from '../shared/Cart';
 import { CartService } from '../services/cart/cart.service';
 import { CartItems } from '../shared/CartItem';
+import { CoffeeService } from '../services/coffee/coffee.service';
 
 @Component({
   selector: 'app-cart-page',
