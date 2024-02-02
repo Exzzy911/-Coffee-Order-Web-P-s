@@ -1,0 +1,65 @@
+<!-- <div class="container">
+  <img [src]="coffee.imageUrl" [alt]="coffee.name" />
+
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{ coffee.name }}
+      </span>
+      <span class="favourite" ng-class="{ not: !coffee.favourite }">❤️ </span>
+    </div>
+    <div class="origins">
+      <span *ngFor="let origin of coffee.origins">{{ origin }} </span>
+    </div>
+  </div>
+  <div class="tag">
+    <app-tags [coffeepageTags]="coffee.tags"></app-tags>
+  </div>
+  <div class="cook-time">
+    <span>
+      Time to cook about <strong>{{ coffee.cookTime }} </strong> minutes
+    </span>
+  </div>
+  <div class="price">
+    <span>{{ coffee.price | currency }} </span>
+  </div>
+  <button>Add to Cart</button>
+</div> -->
+
+<div *ngIf="coffee" class="container">
+  <img [src]="coffee.imageUrl" [alt]="coffee.name" />
+
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{ coffee.name }}
+      </span>
+      <span class="favorite {{ coffee.favourite ? '' : 'not' }}"> ❤ </span>
+    </div>
+
+    <div class="origins">
+      <span *ngFor="let origin of coffee.origins">
+        {{ origin }}
+      </span>
+    </div>
+
+    <div class="tags">
+      <app-tags
+        [coffeepageTags]="coffee.tags"
+        justifyContent="start"
+      ></app-tags>
+    </div>
+
+    <div class="cook-time">
+      <span>
+        Time to cook about <strong>{{ coffee.cookTime }}</strong> minutes
+      </span>
+    </div>
+
+    <div class="price">
+      <span>{{ coffee.price | currency }}</span>
+    </div>
+
+    <button (click)="addToCart()">Add To Cart</button>
+  </div>
+</div>

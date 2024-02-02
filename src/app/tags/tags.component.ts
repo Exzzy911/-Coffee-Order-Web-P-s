@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Tag } from '../shared/models/Tag';
 import { CoffeeService } from '../services/coffee/coffee.service';
 
@@ -8,12 +8,19 @@ import { CoffeeService } from '../services/coffee/coffee.service';
   styleUrls: ['./tags.component.css']
 })
 export class TagsComponent implements OnInit {
-  tags: Tag[] = [];
+  @Input()
+  coffeepageTags?: string[];
+
+  @Input()
+  justifyContent: string = 'center';
+
+  tags?: Tag[];
 
   constructor(private coffeeService: CoffeeService) { }
 
   ngOnInit(): void {
-    this.tags = this.coffeeService.getAllTags();
+    if (!this.coffeepageTags)
+      this.tags = this.coffeeService.getAllTags();
   }
 
 }

@@ -3,18 +3,17 @@
 
 <ul>
   <li *ngFor="let coffee of coffees">
-    <a>
+    <a routerLink="/coffee/{{ coffee.id }}">
       <img src="{{ coffee.imageUrl }}" alt="" />
       <div class="content">
         <div class="name">
           {{ coffee.name }}
         </div>
-        <span class="favourite" ng-class="{ not: !coffee.favourite }">
-          ❤️
-        </span>
+        <span class="favorite {{ coffee.favourite ? '' : 'not' }}"> ❤ </span>
+
         <div class="product-item-footer">
-          <div class="origin">
-            <span *ngFor="let origin of coffee.origin">
+          <div class="origins">
+            <span *ngFor="let origin of coffee.origins">
               {{ origin }}
             </span>
           </div>
@@ -24,7 +23,9 @@
           </div>
         </div>
         <div class="price">
-          <span>{{ coffee.price | currency }} </span>
+          <span>
+            {{ coffee.price | currency }}
+          </span>
         </div>
       </div>
     </a>

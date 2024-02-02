@@ -1,0 +1,20 @@
+div{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+div a{
+    background-color: #f0f0f0;
+    padding: .3rem 1rem;
+    margin: .2rem .15rem;
+    border-radius: 10rem;
+    font-weight: 600;
+    color: rgba(193, 83, 4, 0.82);
+
+}
+
+div a:hover{
+    opacity: 0.7;
+    color: rgba(0, 0, 0, 0.395);
+}

@@ -9,6 +9,10 @@ export class CoffeeService {
 
   constructor() { }
 
+  getCoffeeById(id: number): coffee {
+    return this.getAll().find(coffee => coffee.id == id)!;
+  }
+
   getAllCoffeesBySearchTerm(searchTerm: string): coffee[] {
     return this.getAll().filter(coffee =>
       coffee.name.toLocaleLowerCase().includes(searchTerm.toLocaleLowerCase()));
@@ -48,7 +52,7 @@ export class CoffeeService {
         favourite: false,
         stars: 5.5,
         imageUrl: '/assets/images/food-1.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -59,7 +63,7 @@ export class CoffeeService {
         favourite: false,
         stars: 4.5,
         imageUrl: '/assets/images/food-7.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '5-10'
       },
       {
@@ -70,7 +74,7 @@ export class CoffeeService {
         favourite: false,
         stars: 4.0,
         imageUrl: '/assets/images/food-3.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -81,7 +85,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.8,
         imageUrl: '/assets/images/food-4.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '8-12'
       },
       {
@@ -92,7 +96,7 @@ export class CoffeeService {
         favourite: false,
         stars: 3.5,
         imageUrl: '/assets/images/food-5.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '5-10'
       },
       {
@@ -103,7 +107,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-6.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -114,7 +118,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-6.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -125,7 +129,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-6.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -136,7 +140,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-6.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -147,7 +151,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-6.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -158,7 +162,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-6.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -169,7 +173,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-6.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -180,7 +184,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-6.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -191,7 +195,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-7.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -202,7 +206,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-7.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -213,7 +217,7 @@ export class CoffeeService {
         favourite: true,
         stars: 4.2,
         imageUrl: '/assets/images/food-6.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       },
       {
@@ -224,7 +228,7 @@ export class CoffeeService {
         favourite: false,
         stars: 4.5,
         imageUrl: '/assets/images/food-7.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '5-10'
       },
       {
@@ -235,7 +239,7 @@ export class CoffeeService {
         favourite: true,
         stars: 5.5,
         imageUrl: '/assets/images/food-7.jpg',
-        origin: ['Italy'],
+        origins: ['Italy'],
         cookTime: '10-15'
       }
 

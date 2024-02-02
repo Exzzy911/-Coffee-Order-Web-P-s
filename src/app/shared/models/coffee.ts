@@ -6,7 +6,7 @@ export class coffee {
     favourite: boolean = false;
     stars: number = 0;
     imageUrl!: string;
-    origin!: string[];
+    origins!: string[];
     cookTime!: string;
 
 }
