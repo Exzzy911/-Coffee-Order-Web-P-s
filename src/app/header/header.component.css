@@ -9,6 +9,7 @@ a{
 }
 a:hover{
     background: rgb(225, 149, 7);
+    cursor: pointer;
 }
 .container{
     margin: auto;
@@ -29,3 +30,57 @@ nav ul li a{
     padding: 1em;
     display: inline-block;
 }
+
+ul li a{
+    padding: 1rem;
+    list-style: none;   
+}
+ul{
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+  
+
+
+
+
+.confirmation-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+  }
+  
+  .confirmation-dialog .message {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .confirmation-dialog .buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .confirmation-dialog .buttons button:hover {
+    background-color: #f0f0f0;
+  }
+  
+
+  

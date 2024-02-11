@@ -23,11 +23,11 @@ export class CoffeeService {
     return [
       { name: 'All', count: 14 },
       { name: 'Drinks', count: 4 },
-      { name: 'FastFood', count: 2 },
+      { name: 'coffe1', count: 2 },
       { name: 'Lunch', count: 3 },
-      { name: 'SlowFood', count: 2 },
+      { name: 'SlowFood', count: 1 },
       { name: 'Hamburger', count: 1 },
-      { name: 'Fry', count: 1 },
+      { name: 'coffe3', count: 1 },
       { name: 'Soup', count: 1 }
     ];
 

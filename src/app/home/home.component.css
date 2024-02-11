@@ -5,11 +5,22 @@ ul{
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
+
+    margin: 0.5rem;
+}
+
+
+ul li {
+    width: calc(33.33% - 1rem); 
+    margin: 0.5rem;
 }
 
 ul li a{
-    height: 22.5rem;
-    width: 20rem;
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    max-height: 100%;
+
     border: 1px solid whitesmoke;
     border-radius: 1rem;
     margin: 0.5rem;
@@ -39,9 +50,6 @@ li a:hover{
     color: grey;
 }
 
-.stars{
-    margin-bottom: .2rem;
-}
 
 .product-item-footer{
     display: flex;

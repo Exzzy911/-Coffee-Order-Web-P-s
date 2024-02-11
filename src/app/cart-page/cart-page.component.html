@@ -43,8 +43,16 @@
 
   <div class="checkout">
     <div>
+      <div>Total-Details</div>
+      <br />
       <div class="coffees-count">{{ cart.items.length }}</div>
       <div class="total-price">{{ cart.totalprice | currency }}</div>
+      <button id="x1" (click)="onBuyClick()">Tap to Buy</button>
+      <div *ngIf="showThanksMessage" class="popup-container">
+        <div class="card-popup">
+          <div class="card-content">Thanks for buying!</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

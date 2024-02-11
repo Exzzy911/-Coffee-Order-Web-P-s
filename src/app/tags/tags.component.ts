@@ -23,4 +23,6 @@ export class TagsComponent implements OnInit {
       this.tags = this.coffeeService.getAllTags();
   }
 
+
+
 }

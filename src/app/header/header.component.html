@@ -1,6 +1,8 @@
-<header>
+<header *ngIf="showHeader">
   <div class="container">
-    <a href="#" routerLink="/" class="logo"> IMS Online Coffe Order System</a>
+    <a href="#" routerLink="/home" class="logo">
+      IMS Online Coffe Order System</a
+    >
     <nav>
       <ul>
         <li>
@@ -8,5 +10,18 @@
         </li>
       </ul>
     </nav>
+    <ul>
+      <li>
+        <a (click)="confirmLogout()">Logout</a>
+      </li>
+    </ul>
   </div>
 </header>
+
+<div *ngIf="showConfirmation" class="confirmation-dialog">
+  <div class="message">Are you sure you want to logout?</div>
+  <div class="buttons">
+    <button (click)="logout()">Yes</button>
+    <button (click)="cancelLogout()">No</button>
+  </div>
+</div>

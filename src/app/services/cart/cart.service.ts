@@ -29,6 +29,10 @@ export class CartService {
     cartItem.quantity = quantity;
   }
 
+  clearCart(): void {
+    this.cart.items = [];
+  }
+
   getCart(): Cart {
     return this.cart;
   }

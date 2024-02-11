@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Cart } from '../shared/Cart';
+import { Router } from '@angular/router';
 import { CartService } from '../services/cart/cart.service';
+import { Cart } from '../shared/Cart';
 import { CartItems } from '../shared/CartItem';
-import { CoffeeService } from '../services/coffee/coffee.service';
 
 @Component({
   selector: 'app-cart-page',
@@ -10,11 +10,13 @@ import { CoffeeService } from '../services/coffee/coffee.service';
   styleUrls: ['./cart-page.component.css']
 })
 export class CartPageComponent implements OnInit {
+  showThanksMessage = false;
   cart!: Cart;
-  constructor(private cartService: CartService) {
+  constructor(private cartService: CartService, private router: Router) {
     this.setCart();
   }
   ngOnInit(): void {
+
   }
 
   removeFromCart(cartItem: CartItems) {
@@ -32,11 +34,14 @@ export class CartPageComponent implements OnInit {
     this.cart = this.cartService.getCart();
   }
 
+  onBuyClick() {
+    this.showThanksMessage = true;
+    setTimeout(() => {
+      this.showThanksMessage = false;
+      this.cartService.clearCart();
+      this.router.navigate(['/home']);
+    }, 3000);
+  }
+
+
 }
-
-
-
-
-
-
-

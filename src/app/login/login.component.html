@@ -1,0 +1,16 @@
+<div class="login-component">
+  <h3 class="mark">Ims Coffee Shop</h3>
+  <div class="container">
+    <div class="highlighted-text">
+      Employee Id
+      <input type="text" class="transparent-input" [(ngModel)]="employeeId" />
+    </div>
+    <div class="highlighted-text">
+      Password
+      <input type="text" class="transparent-input" [(ngModel)]="password" />
+    </div>
+    <div>
+      <button class="login" (click)="onLoginClick()">Login</button>
+    </div>
+  </div>
+</div>

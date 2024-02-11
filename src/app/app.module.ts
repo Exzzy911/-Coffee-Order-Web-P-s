@@ -11,6 +11,10 @@ import { TagsComponent } from './tags/tags.component';
 import { coffeePageComponent } from './coffee-page/coffee-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { LoginComponent } from './login/login.component';
+import { Router } from '@angular/router';
+import { LogoutConfirmationComponent } from './logout-confirmation/logout-confirmation.component';
+import { PageErrorComponent } from './page-error/page-error.component';
 
 
 @NgModule({
@@ -22,7 +26,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     TagsComponent,
     coffeePageComponent,
     CartPageComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    LoginComponent,
+    LogoutConfirmationComponent,
+    PageErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -33,3 +40,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
