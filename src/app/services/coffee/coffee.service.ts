@@ -27,7 +27,7 @@ export class CoffeeService {
       { name: 'Lunch', count: 3 },
       { name: 'SlowFood', count: 1 },
       { name: 'Hamburger', count: 1 },
-      { name: 'coffe3', count: 1 },
+      { name: 'coffee3', count: 1 },
       { name: 'Soup', count: 1 }
     ];
 
