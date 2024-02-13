@@ -3,14 +3,29 @@
   <div class="container">
     <div class="highlighted-text">
       Employee Id
-      <input type="text" class="transparent-input" [(ngModel)]="employeeId" />
+      <input
+        #myInput
+        type="text"
+        class="transparent-input"
+        [(ngModel)]="employeeId"
+      />
     </div>
     <div class="highlighted-text">
       Password
-      <input type="text" class="transparent-input" [(ngModel)]="password" />
+      <input
+        #myInput1
+        type="text"
+        class="transparent-input"
+        [(ngModel)]="password"
+      />
     </div>
     <div>
-      <button class="login" (click)="onLoginClick()">Login</button>
+      <button
+        (click)="onClick(myInput.value, myInput1.value); onLoginClick()"
+        class="login"
+      >
+        Login
+      </button>
     </div>
   </div>
 </div>
