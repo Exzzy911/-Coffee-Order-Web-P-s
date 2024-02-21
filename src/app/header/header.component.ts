@@ -19,7 +19,6 @@ export class HeaderComponent implements OnInit {
   confirmLogout() {
     this.showConfirmation = true;
 
-
   }
 
   logout() {

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TagsComponent } from './tags/tags.component';
 import { coffeePageComponent } from './coffee-page/coffee-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
@@ -29,12 +29,13 @@ import { PageErrorComponent } from './page-error/page-error.component';
     NotFoundComponent,
     LoginComponent,
     LogoutConfirmationComponent,
-    PageErrorComponent
+    PageErrorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

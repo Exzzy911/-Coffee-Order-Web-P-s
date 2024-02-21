@@ -62,7 +62,7 @@ export class CoffeeService {
         tags: ['Drinks'],
         favourite: false,
         stars: 4.5,
-        imageUrl: '/assets/images/food-7.jpg',
+        imageUrl: '/assets/images/food-2.jpg',
         origins: ['Italy'],
         cookTime: '5-10'
       },

@@ -7,7 +7,7 @@
 <ul>
   <li *ngFor="let coffee of coffees">
     <a routerLink="/coffee/{{ coffee.id }}">
-      <img src="{{ coffee.imageUrl }}" alt="" />
+      <img class="img-coffee" src="{{ coffee.imageUrl }}" alt="" />
       <div class="content">
         <div class="name">
           {{ coffee.name }}

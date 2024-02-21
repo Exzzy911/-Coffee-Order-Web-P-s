@@ -40,8 +40,8 @@ export class CartPageComponent implements OnInit {
       this.showThanksMessage = false;
       this.cartService.clearCart();
       this.router.navigate(['/home']);
+
     }, 3000);
   }
-
 
 }

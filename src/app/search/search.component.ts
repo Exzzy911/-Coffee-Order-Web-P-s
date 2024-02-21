@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
@@ -24,4 +24,4 @@ export class SearchComponent implements OnInit {
       this.router.navigateByUrl('/search/' + this.searchTerm)
   }
 
-}
+}  

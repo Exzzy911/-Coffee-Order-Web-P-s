@@ -1,5 +1,7 @@
+declare var google: any
 import { Component, OnInit, } from '@angular/core';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -14,9 +16,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
 
-  }
   onLoginClick() {
     if (this.employeeId.trim() === '' || this.password.trim() === '') {
       alert('please enter both Employee Id and Password.');
@@ -38,6 +38,24 @@ export class LoginComponent implements OnInit {
   onClick(employeeId: any, password: any) {
     console.log('EmployeeId:', employeeId);
     console.log('Password:', password);
+  }
+
+  ngOnInit(): void {
+    google.accounts.id.initialize({
+      client_id: '504051144816-pof4rnb2iffb947i18gbm9grujqf5v97.apps.googleusercontent.com',
+      callback: (resp: any)=> {
+        console.log(resp);
+        this.router.navigate(['/home']);
+      }
+    });
+
+    google.accounts.id.renderButton(document.getElementById("google-btn"), {
+      theme: 'filled_black',
+      size: 'larger',
+      shape: 'circle',
+      width: 300
+    })
+
   }
 
 }
