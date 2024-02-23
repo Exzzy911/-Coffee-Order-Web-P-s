@@ -1,4 +1,4 @@
-<div class="login-component">
+<!-- <div class="login-component">
   <h3 class="mark">Ims Coffee Shop</h3>
   <div class="container">
     <div class="highlighted-text">
@@ -17,6 +17,46 @@
         type="text"
         class="transparent-input"
         [(ngModel)]="password"
+      />
+    </div>
+    <div>
+      <button
+        (click)="onClick(myInput.value, myInput1.value); onLoginClick()"
+        class="login"
+      >
+        Login
+      </button>
+    </div>
+    <div class="x" style="text-align: center;">
+      <div id="google-btn" style="display: inline-block; margin-right: 30%;"></div>
+    </div>
+  </div>
+
+</div> -->
+
+
+
+<div class="login-component">
+  <h3 class="mark">Ims Coffee Shop</h3>
+  <div class="container">
+    <div class="highlighted-text">
+      Employee Id
+      <input
+        #myInput
+        type="text"
+        class="transparent-input"
+        [(ngModel)]="employeeId"
+        
+      />
+    </div>
+    <div class="highlighted-text">
+      Password
+      <input
+        #myInput1
+        type="text"
+        class="transparent-input"
+        [(ngModel)]="password"
+        
       />
     </div>
     <div>
