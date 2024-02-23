@@ -53,9 +53,9 @@ export class LoginComponent implements OnInit {
       theme: 'filled_black',
       size: 'larger',
       shape: 'circle',
-      width: 300
+      width: 310
     })
 
-  }
+  } 
 
 }
